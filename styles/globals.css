@@ -2,4 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
-body {}
+.home-container {
+  background-color: #f5f1e6;
+  height: 100vh;
+}
+
+.navbar {
+  border-bottom: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.body-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.body-container>.home-title {
+  display: flex;
+  align-items: center;
+  padding-left: 200px;
+  font-size: 50px;
+  width: 550px;
+}
+
+.body-container>.background-image {
+  display: flex;
+  align-items: center;
+  margin-right: 100px;
+  margin-top: 100px;
+  box-shadow: 0 0 30px grey;
+  border-radius: 10px;
+}
+
+.body-container>.background-image img {
+  border-radius: 10px;
+}
