@@ -6,6 +6,9 @@ import steak from '../public/images/steak.jpg'
 import salad from '../public/images/salad.jpg'
 import berries from '../public/images/berries.jpg'
 import strawberries from '../public/images/strawberries.jpg'
+import quotes from '../public/images/right-quote-sign.png'
+import hector from '../public/images/hector.jpg'
+import sandra from '../public/images/sandra.jpg'
 import { Inter } from 'next/font/google'
 
 const name = 'Iván Prieto Nutricionista';
@@ -25,9 +28,6 @@ export default function Home() {
         </div>
         <div>
           Iván Prieto | Nutriólogo
-        </div>
-        <div>
-          Tabla
         </div>
       </nav>
 
@@ -87,6 +87,51 @@ export default function Home() {
           </tr>
         </tbody>
       </table>
+
+      {/* Testimonials */}
+      <div className='testimonials-section-title'>
+        <text >Testimonios</text>
+
+      </div>
+      <div className='testimonials'>
+        <div className='testimonial'>
+          <Image src={quotes} width={40} height={40}></Image>
+          <div className='review-text'>
+            <text className='review-title'>Recomendado!</text>
+            <text className='review'>
+              Estable un buen plan nutricional conforme
+              a las necesidades del paciente con buenos resultados.
+              En lo personal me ayudó a bajar de peso durante el postparto.
+            </text>
+          </div>
+          <div className='review-bottom'>
+            <Image className='review-picture' src={sandra} width={50} height={50}></Image>
+            <text>Sandra Sanchez</text>
+          </div>
+        </div>
+        <div className='testimonial'>
+          <Image src={quotes} width={40} height={40}></Image>
+          <div className='review-text'>
+            <text className='review-title'>Se la rifa!</text>
+            <text className='review'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris condimentum lacus erat, Lorem ipsum dolor sit amet, consectetur adipiscing elit,</text>
+          </div>
+          <div className='review-bottom'>
+            <Image className='review-picture' src={hector} width={50} height={50}></Image>
+            <text>Hector Sanchez </text>
+          </div>
+        </div>
+        <div className='testimonial'>
+          <Image src={quotes} width={40} height={40}></Image>
+          <div className='review-text'>
+            <text className='review-title'>Excelente Nutriologo!</text>
+            <text className='review'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris condimentum lacus erat, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</text>
+          </div>
+          <div className='review-bottom'>
+            <Image className='review-picture' src={hector} width={50} height={50}></Image>
+            <text>Pancho Garcia</text>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
