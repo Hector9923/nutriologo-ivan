@@ -2,40 +2,107 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  background-color: #fcf4f0;
+}
+
 .home-container {
-  background-color: #f5f1e6;
+  /* background-color: #f5f1e6; */
   height: 100vh;
 }
 
 .navbar {
-  border-bottom: 1px solid black;
+  /* border-bottom: 1px solid black; */
   display: flex;
   align-items: center;
   justify-content: space-around;
+  font-size: 25px
 }
 
 .body-container {
+  position: relative;
   display: flex;
-  justify-content: space-between;
+  padding: 20px;
+  margin-top: 50px;
+  justify-content: space-around;
+}
+
+.body-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f6e3cf;
+  /* border-bottom: 1px solid black; */
+  transform: skewY(-10deg);
+  z-index: -1;
 }
 
 .body-container>.home-title {
   display: flex;
   align-items: center;
-  padding-left: 200px;
-  font-size: 50px;
+  font-size: 70px;
   width: 550px;
 }
 
 .body-container>.background-image {
   display: flex;
   align-items: center;
-  margin-right: 100px;
-  margin-top: 100px;
   box-shadow: 0 0 30px grey;
   border-radius: 10px;
 }
 
 .body-container>.background-image img {
   border-radius: 10px;
+}
+
+/* bubble section */
+/* Picture bubbles section */
+/* Picture bubbles section */
+.picture-bubbles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 100px
+}
+
+/* Individual bubble styles */
+.bubble {
+  width: 225px;
+  height: 225px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin: 0 10px;
+  background-size: cover;
+}
+
+/* Table styles */
+.styled-table {
+  width: 80%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 10px;
+}
+
+.styled-table th {
+  background-color: #ccc;
+  color: #fff;
+  text-align: left;
+}
+
+.styled-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.styled-table tbody tr:hover {
+  background-color: #ddd;
 }
