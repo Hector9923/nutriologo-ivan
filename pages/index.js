@@ -4,11 +4,13 @@ import Logo from '../public/images/logo.jpg'
 import Background from '../public/images/home-vegetables-background.jpg'
 import steak from '../public/images/steak.jpg'
 import salad from '../public/images/salad.jpg'
+import ivan from '../public/images/ivanProfile.jpg'
 import berries from '../public/images/berries.jpg'
 import strawberries from '../public/images/strawberries.jpg'
 import quotes from '../public/images/right-quote-sign.png'
 import hector from '../public/images/hector.jpg'
 import sandra from '../public/images/sandra.jpg'
+import david from '../public/images/david.jpg'
 import { Inter } from 'next/font/google'
 
 const name = 'Iván Prieto Nutricionista';
@@ -23,7 +25,7 @@ export default function Home() {
           <Image src={Logo} width={120} height={120}></Image>
         </div>
         <span>Nutriologo Iván Prieto</span>
-        <a href='/contactame'>
+        <a className='contact' href='/contactame'>
           Contáctame
         </a>
       </nav>
@@ -34,8 +36,22 @@ export default function Home() {
           La salud no significa un retorno al estado original, sino el éxito al lidiar con el cambio constante.
         </div>
         <div className='background-image'>
-          <Image src={Background} width={400} height={700}></Image>
+          <Image src={ivan} width={540} height={188}></Image>
         </div>
+      </div>
+
+      {/* Informational section */}
+      <div className='info-section'>
+        <p className='info-section-title'>Consulta Nutricional</p>
+        <p className='info-section-subtitle'>Los hábitos saludables del día a día terminan haciendo la diferencia</p>
+        <ul className='info-section-list'>
+          <li>Aumento de masa muscular</li>
+          <li>Perder grasa</li>
+          <li>Síndrome metabólico</li>
+          <li>Plan alimenticio 100% personalizado</li>
+          <li>Seguimiento semanal online</li>
+        </ul>
+        <p className='appoinment-text'>AGENDA TU CITA <a href='/contactame' style={{ textDecoration: 'underline', color: '#83e619' }}>AHORA</a></p>
       </div>
 
       {/* Picture bubbles section */}
@@ -126,7 +142,7 @@ export default function Home() {
             <text className='review'>Muy buena atención al paciente, explica su plan de trabajo.</text>
           </div>
           <div className='review-bottom'>
-            <Image className='review-picture' src={hector} width={50} height={50}></Image>
+            <Image className='review-picture' src={david} width={50} height={50}></Image>
             <text>David Carrillo</text>
           </div>
         </div>

@@ -7,7 +7,6 @@ body {
 }
 
 .home-container {
-  /* background-color: #f5f1e6; */
   height: 100vh;
 }
 
@@ -15,8 +14,19 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  font-size: 25px;
-  margin-top: 20px;
+  font-size: 30px;
+  margin-top: 30px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  line-height: 58px;
+}
+
+.contact {
+  font-weight: 300;
+}
+
+.contact:hover {
+  color: #74ab38;
 }
 
 .body-container {
@@ -35,7 +45,6 @@ body {
   right: 0;
   bottom: 0;
   background-color: #f6e3cf;
-  /* border-bottom: 1px solid black; */
   transform: skewY(-10deg);
   z-index: -1;
 }
@@ -58,8 +67,32 @@ body {
   border-radius: 10px;
 }
 
-/* bubble section */
-/* Picture bubbles section */
+/* info section */
+.info-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.info-section-title {
+  font-size: 60px;
+}
+
+.info-section-subtitle {
+  font-size: 30px;
+}
+
+.info-section-list {
+  list-style-type: disc;
+  padding: 20px;
+  font-size: 22px;
+}
+
+.appoinment-text {
+  font-size: 30px;
+}
+
 /* Picture bubbles section */
 .picture-bubbles {
   display: flex;
