@@ -17,6 +17,10 @@ export const metadata = {
   title: 'Nutriólogo Iván Prieto',
   description: 'Nutriólogo Iván Prieto en Nuevo Casas Grandes Chihuahua',
   keywords: [
+    'Nutriologo',
+    'Ivan',
+    'Prieto',
+    'Nuevo Casas Grandes Chihuahua',
     'Nutrición',
     'Consulta nutricional',
     'Salud alimentaria',
