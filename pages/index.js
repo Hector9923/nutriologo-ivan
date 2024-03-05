@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image'
 import Logo from '../public/images/logo.jpg'
-import Background from '../public/images/home-vegetables-background.jpg'
 import steak from '../public/images/steak.jpg'
 import salad from '../public/images/salad.jpg'
 import ivan from '../public/images/ivanProfile.jpg'
@@ -11,7 +10,6 @@ import quotes from '../public/images/right-quote-sign.png'
 import hector from '../public/images/hector.jpg'
 import sandra from '../public/images/sandra.jpg'
 import david from '../public/images/david.jpg'
-import { Html, Head, Main, NextScript } from 'next/document'
 
 const name = 'Iván Prieto Nutricionista';
 export const siteTitle = 'Iván Prieto Nutricionista';
