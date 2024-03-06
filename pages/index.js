@@ -11,8 +11,6 @@ import hector from '../public/images/hector.jpg'
 import sandra from '../public/images/sandra.jpg'
 import david from '../public/images/david.jpg'
 
-const name = 'Iván Prieto Nutricionista';
-export const siteTitle = 'Iván Prieto Nutricionista';
 export const metadata = {
   title: 'Nutriólogo Iván Prieto',
   description: 'Nutriólogo Iván Prieto en Nuevo Casas Grandes Chihuahua',
@@ -42,15 +40,15 @@ export const metadata = {
     'Nutrición preventiva'
   ]
 }
+
 export default function Home() {
   return (
     <>
       <Head>
         <title>Nutriólogo Iván Prieto</title>
-        <meta
-          name="description"
-          content="Nutriólogo Iván Prieto en Nuevo Casas Grandes Chihuahua"
-        />
+        <meta name="title" content={metadata.title} />
+        <meta name="description" content={metadata.description} />
+        <meta name="keywords" content={metadata.keywords.join(',')} />
         {/* Additional meta tags */}
       </Head>
       <div className='home-container'>
@@ -59,7 +57,7 @@ export default function Home() {
           <div className='logo'>
             <Image src={Logo} width={120} height={120}></Image>
           </div>
-          <span>Nutriologo Iván Prieto</span>
+          <span className='nutriologo'>Nutriólogo <br/>Iván Prieto</span>
           <a className='contact' href='/contactame'>
             Contáctame
           </a>
@@ -67,9 +65,9 @@ export default function Home() {
 
         {/*Top section of landing page*/}
         <div className='body-container'>
-          <div className='home-title'>
+          <span className='home-title'>
             La salud no significa un retorno al estado original, sino el éxito al lidiar con el cambio constante.
-          </div>
+          </span>
           <div className='background-image'>
             <Image src={ivan} width={540} height={188}></Image>
           </div>
@@ -86,7 +84,7 @@ export default function Home() {
             <li>Plan alimenticio 100% personalizado</li>
             <li>Seguimiento semanal online</li>
           </ul>
-          <p className='appoinment-text'>AGENDA TU CITA <a href='/contactame' style={{ textDecoration: 'underline', color: '#83e619' }}>AHORA</a></p>
+          <p className='appoinment-text'>AGENDA TU CITA <a href='/contactame' style={{ textDecoration: 'underline', color: '#00C2A8' }}>AHORA</a></p>
         </div>
 
         {/* Picture bubbles section */}
@@ -95,7 +93,6 @@ export default function Home() {
           <Image src={salad} className='bubble'></Image>
           <Image src={berries} className='bubble'></Image>
           <Image src={strawberries} className='bubble'></Image>
-          {/* <Image src={} className='bubble'></Image> */}
         </div>
 
         {/* Table */}
@@ -184,7 +181,7 @@ export default function Home() {
         </div>
 
         {/* Footer */}
-        <div className='navbar'>
+        <div className='navbar footer'>
           <p>Av.5 de Mayo 404 Interior #1 Centro, Nuevo Casas Grandes, Chihuahua 31700</p>
         </div>
       </div>

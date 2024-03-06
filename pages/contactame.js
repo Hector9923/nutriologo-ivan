@@ -47,7 +47,7 @@ export default function ContactUs() {
                 <div className='logo'>
                     <Image src={Logo} width={120} height={120}></Image>
                 </div>
-                <span>Nutriologo Iván Prieto</span>
+                <span className="nutriologo">Nutriologo Iván Prieto</span>
             </nav>
 
             <a className="link" href="/">Regresar</a>
@@ -97,14 +97,14 @@ export default function ContactUs() {
                         <input className="input" type="email" name="user_email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="email" />
                     </div>
                     <div className="input-wrapper">
-                        <label>Tu número de teléfono o celular</label>
+                        <label>Tu número de celular</label>
                         <input className="input" type="number" name="user_email" value={phone} onChange={(e) => setPhone(e.target.value)} placeholder="celular" />
                     </div>
                     <div className="input-wrapper">
                         <label>Tu mensaje</label>
-                        <textarea className="input message" name="message" value={message} onChange={(e) => setMessage(e.target.value)} placeholder="message" />
+                        <textarea className="input message" name="message" value={message} onChange={(e) => setMessage(e.target.value)} placeholder="mensaje" />
                     </div>
-                    <input className="send-button" type="submit" value="SEND" onClick={submitCheck} />
+                    <input className="send-button" type="submit" value="Enviar" onClick={submitCheck} />
                 </form>
             </div>
         </div >
