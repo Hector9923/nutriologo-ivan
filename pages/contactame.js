@@ -99,7 +99,7 @@ export default function ContactUs() {
                     </div>
                     <div className="input-wrapper">
                         <label>Tu número de celular</label>
-                        <input className="input" type="number" name="user_email" value={phone} onChange={(e) => setPhone(e.target.value)} placeholder="celular" />
+                        <input className="input" type="number" name="user_phone" value={phone} onChange={(e) => setPhone(e.target.value)} placeholder="celular" />
                     </div>
                     <div className="input-wrapper">
                         <label>Tu mensaje</label>
