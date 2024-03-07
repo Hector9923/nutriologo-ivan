@@ -1,7 +1,10 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 ## Getting Started
-1. First install dependencies with a modern `node` version like `20.10.0` and run: `npm install`
-2. then, run the development server:
+1. First install dependencies with a modern `node` version like `20.10.0` and run:
+```
+    npm install
+```
+3. then, run the development server:
 
 ```bash
 npm run dev
