@@ -3,7 +3,8 @@ import emailjs from "@emailjs/browser";
 import swal from "sweetalert";
 import Logo from '../public/images/logo.jpg'
 import Image from 'next/image'
-import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaWhatsapp, FaLessThan } from "react-icons/fa";
+import Link from 'next/link'
 
 export default function ContactUs() {
     const [name, setName] = useState("");
@@ -43,22 +44,22 @@ export default function ContactUs() {
 
     return (
         <div>
+            <Link href="/" className="link">
+                <FaLessThan /> Inicio
+            </Link>
             <nav className='navbar'>
                 <div className='logo'>
                     <Image src={Logo} width={120} height={120}></Image>
                 </div>
-                <span className="nutriologo">Nutriologo Iván Prieto</span>
+                <span className="nutriologo-contact">Nutriologo Iván Prieto</span>
             </nav>
-
-            <a className="link" href="/">Regresar</a>
-
             <div className="contact-wrapper">
                 <div className="contact-left">
                     <div className="left-header">¿Quieres agendar una cita? Contáctame por email y visita mis redes sociales!</div>
                     <div className="contact-icons">
                         <a
                             className="contact-link"
-                            href=""
+                            href="https://www.facebook.com/people/Nutri%C3%B3logo-Ivan-Prieto/100085377760110/?mibextid=PtKPJ9"
                             target="_blank"
                             rel="noreferrer"
                             title="Visita mi facebook"
@@ -67,7 +68,7 @@ export default function ContactUs() {
                         </a>
                         <a
                             className="contact-link"
-                            href=""
+                            href="https://www.instagram.com/nutriologo_ivan_prieto?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
                             target="_blank"
                             rel="noreferrer"
                             title="Visita mi instagram"
@@ -107,6 +108,10 @@ export default function ContactUs() {
                     <input className="send-button" type="submit" value="Enviar" onClick={submitCheck} />
                 </form>
             </div>
-        </div >
+            {/* Footer */}
+            <div className='footer'>
+                <p>Av.5 de Mayo 404 Interior #1 Centro, Nuevo Casas Grandes, Chihuahua 31700</p>
+            </div>
+        </div>
     );
 }

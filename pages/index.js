@@ -181,7 +181,7 @@ export default function Home() {
         </div>
 
         {/* Footer */}
-        <div className='navbar footer'>
+        <div className='footer-home'>
           <p>Av.5 de Mayo 404 Interior #1 Centro, Nuevo Casas Grandes, Chihuahua 31700</p>
         </div>
       </div>

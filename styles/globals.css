@@ -14,15 +14,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  font-size: 30px;
+  font-size: 35px;
   margin-top: 30px;
   font-family: 'Lato', sans-serif;
-  font-weight: 400;
+  font-weight: bold;
   line-height: 58px;
 }
 
 .contact {
-  font-weight: 300;
+  font-weight: bold;
   color: #00C0A3;
 }
 
@@ -189,30 +189,49 @@ body {
   gap: 10px;
 }
 
+.footer-home {
+  font-size: 22px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
 @media (max-width: 480px) {
   .home-container {
     width: 146%;
     display: flex;
     flex-direction: column;
+    padding: 0 10px;
+  }
+
+  .navbar {
+    flex-direction: column; /* Alinea los elementos en una columna */
+    text-align: center; /* Centra el texto */
   }
 
   .nutriologo {
+    margin: 20px 0px 20px 0px; /* Agrega un poco de espacio encima del texto */
     text-align: center;
+    font-size: 45px;
   }
 
   .contact {
-    font-weight: bold;
+    font-size: 40px;
   }
 
   .body-container {
     display: flex;
     flex-direction: column;
+    padding: 20px 10px; /* Ajusta el espacio interno */
+    margin-top: 20px; 
   }
 
   .home-title {
     order: 2;
     padding: 25px;
     font-size: 35px;
+    text-align: center;
+    width: auto; /* Permitir que el texto se ajuste automáticamente */
+    font-size: 30px; /* Reduce el tamaño del texto */
     text-align: center;
   }
 
@@ -239,11 +258,6 @@ body {
     justify-content: center;
   }
 
-  .styled-table {
-    width: 95%;
-    font-size: 20px;
-  }
-
   .testimonials-section-title {
     padding-bottom: 50px;
   }
@@ -265,8 +279,9 @@ body {
     width: 25%;
   }
 
-  .footer {
-    text-align: center;
-    padding-bottom: 20px;
+  .footer-home {
+    padding: 20px;
+    font-size: 25px;
+    margin-top: 20px;
   }
 }
